@@ -1,4 +1,10 @@
-body div input{
+body{
+    /* font-family: NanumGothic, Consolas; */
+}
+
+/* body div input */
+#btn_nightDay{
+    font-size: 1.1em;
     float: right;
     border: 0;
     margin: 10px;
@@ -12,34 +18,71 @@ body.black a{
     color: white;
 }
 
+header{
+   height: 10vh;
+   border-bottom: 1px solid red;
+}
+
+a:visited{
+    /* color: orange; */
+    text-decoration: none;
+    /* text-decoration: overline; */
+}
+a{
+    color:black;
+    text-decoration-line: none;
+}
+
 header h1{
-    border-bottom: 3px solid red;
-    margin: 30px 0 5px 0;
-    padding: 0 0 20px 20px;
+    /* text-align: center; */
+    margin: 2vh 0 1vh 42.5vw;
+    padding: 3vh 0 0vh 0;
+}  
+
+header img{
+    width: 8vh;
+    height: 8vh;
+    float: left;
+    margin: 1vh 1vh 1vh 35vw;
 }
 
 nav{
-    padding: 10px 0 0 0;
-    width: 180px;
-    border-right: 1px solid red;
-    float: left;
-    height: 100vh;
+    padding: 0 0 2vh 0;
+    margin: 1.5vh 0 1vh 0;
+    text-align: center;
+    border-bottom: 3px solid red;
 }
 
-nav ol{
-    list-style: none;
+nav span{
+    font-weight: bolder;
+    /* border: 1px solid orange; */
+    min-width: 5vh;
+    padding: 0.5vh 1vh;
+    margin: 0.5vh 1vh;
+}
+
+.subNav{
+    padding: 0 0 0 0;
+    width: 160px;
+    border-right: 1px solid red;
+    float: left;
+    height: 90vh;
+}
+
+.subNav ol{
+    list-style: disc;
 }
 
 article{
     width: 80vh;
-   margin: 0 0 0 20px;
-   padding: 20px;
-   float: left;
-   height: 100vh;
+    margin: 0 0 0 20px;
+    padding: 20px;
+    float: left;
+    height: 100vh;
 }
 
 article h2{
-    margin: 0 0 30px 0;
+    margin: 0 0 30px 0; 
 }
 
 article #tobni{
