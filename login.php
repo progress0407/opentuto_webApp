@@ -6,19 +6,25 @@
     <title>Document</title>
 </head>
 <body>
+    <!-- hello? -->
     <script>
-        document.write('login.php');
-        var id = prompt('input the id');
-        var pwd = prompt('input the pwd');
+        // document.write('login.php');
+        let id = prompt('input the id');
+        let pwd;
+        // console.log('hihi');
         if(id === 'swCho'){
-            if(pwd === '1324'){
+            pwd = prompt('input the pwd');
+            if(pwd === '1324') {
                 document.write('hi');
             } else {
                 document.write('who?..');
             }
+            
         } else {
-            document.write('there''s not id');
+            document.write('there\'s not id');
         }
+        
     </script>
+    
 </body>
 </html>

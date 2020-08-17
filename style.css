@@ -1,3 +1,17 @@
+body div input{
+    float: right;
+    border: 0;
+    margin: 10px;
+}
+body.black{
+    background-color: black;
+    color: white;
+}
+
+body.black a{
+    color: white;
+}
+
 header h1{
     border-bottom: 3px solid red;
     margin: 30px 0 5px 0;

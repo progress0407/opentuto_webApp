@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <script src="2.js"></script>
+</head>
+<style>
+    .meToo{
+        font-size: 3em;
+        color: darkorchid;
+        background-color: goldenrod;
+        padding: 100px;
+        margin: 20px;
+    }
+    .bobo{
+        color: white;
+        background-color: black;
+    }
+</style>
+<body id='bobo'>
+    <h2>practice</h2>
+    <br/><br/>
+    <input type="button" value="nightHanlder" onclick="
+        if(document.getElementById('bobo').className == '') {
+            document.getElementById('bobo').className = 'bobo';
+        } else {
+            document.getElementById('bobo').className = '';
+        }
+        "/>
+
+    <br/><br/>
+    <input type="text" name="swCho" id="texted"/>
+    <input type="button" value="alert" onclick = "alert(document.getElementById('texted').value)">
+    <br/><br/>
+    <input type="button" value="change" onclick = "
+        if(document.getElementById('meToo').className =='') {
+            document.getElementById('meToo').className = 'meToo'
+        } else {
+            document.getElementById('meToo').className = ''
+        }
+        "/>
+
+    <ol id='meToo'>
+        <li>q</li>
+        <li>w</li>
+        <li>e</li>
+        <li>r</li>
+    </ol>
+  
+</body>
+</html>
