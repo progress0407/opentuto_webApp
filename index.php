@@ -19,12 +19,16 @@
     <div class = "subNav">
             <ol>
                 <?php
-                    // echo 'page: '. file_get_contents($_GET['page'].'.html').'<br>';
-                    // echo 'subPage: '. file_get_contents($_GET['subPage'].'.html').'<br>';
                     if(empty($_GET['page'])){
                         echo ' . . .';
                     } else {
-                        echo file_get_contents($_GET['page'].'.html');
+                        if($_GET['page'] === 'byReadingDB') {
+                            // 아래 구문은 힘들다. 하지 말 것!
+                            // echo file_get_contents('byReadingDB.php');
+                            header("Location: pracSQL/index.php");
+                        } else {
+                            echo file_get_contents($_GET['page'].'.html');
+                        }
                     }
                 ?>
             </ol>
@@ -33,6 +37,7 @@
         <input type="button" value="night/Day" id = "btn_nightDay" />
     </div>
     <article>
+        
         <?php
             if(!empty($_GET['subPage'])) {
                 echo file_get_contents($_GET['subPage'].'.html');

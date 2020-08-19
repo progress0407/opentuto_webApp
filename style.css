@@ -63,7 +63,7 @@ nav span{
 
 .subNav{
     padding: 0 0 0 0;
-    width: 160px;
+    width: 10vw;
     border-right: 1px solid red;
     float: left;
     height: 90vh;
@@ -71,18 +71,18 @@ nav span{
 
 .subNav ol{
     list-style: disc;
+    padding-left: 30px;
 }
 
 article{
-    width: 80vh;
-    margin: 0 0 0 20px;
-    padding: 20px;
+    width: 70vw;    
+    padding: 2vh 2vw;
     float: left;
     height: 100vh;
 }
 
 article h2{
-    margin: 0 0 30px 0; 
+    margin: 0 0 30px 0;
 }
 
 article #tobni{
