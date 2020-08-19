@@ -14,7 +14,7 @@
     <?php
         $conn = mysqli_connect('localhost', 'root', '13245657');
         mysqli_select_db($conn, 'openTutoWebApp');
-        $result = mysqli_query($conn, 'SELECT id, title FROM topic;');
+        $result = mysqli_query($conn, "SELECT * FROM topic;");
     ?>
     <nav>
         <p>
@@ -22,17 +22,27 @@
                 <?php
                     while($row = mysqli_fetch_assoc($result)){
                         //var_dump($row);
+                        // 리스트 목록 작성
                         echo '<li><a href="index.php?id=' . $row['id'] . '">' . $row['title']. '</a></li>';
                         echo '
                             <form action="deleteDB.php" method="POST">
                                 <input type="hidden" name="toDelete" value="' .$row['id']. '">
-                                <input type="submit" value="삭제" name = "'.$row['id']. '">
+                                <input type="submit" value="삭제">
+                            </form>';
+                        echo '
+                            <form action="updateDB.php" method="POST">
+                                <input type="hidden" name="id" value="'.$row['id']. '">
+                                <input type="hidden" name="title" value="'.$row['title']. '">
+                                <input type="hidden" name="description" value="'.$row['description']. '">
+                                <input type="hidden" name="author" value="'.$row['author']. '">
+                                <input type="submit" value="수정">
                             </form>';
                     }
                 ?>
             </ol>
         </p>
     </nav>
+    <!-- 본문 작성 -->
     <article>
         <?php
             if(empty($_GET['id'])) {
@@ -49,7 +59,14 @@
                 삭제할 것 : <input type="text"  name="toDelete">
                 <input type="submit" value="삭제">
             </form>
-        <a href="writeDB.html"><input type="button" value="wrtie"></a>
+            <br>
+            ===============================글 작성하기===============================
+            <form action="writeDB.php" method="POST">
+                <p>제목 : <input type="text" name="title"></p>
+                <p>작성자 : <input type="text" name="author""></p>
+                <p>본문 : <textarea name="description" cols="30" rows="10"></textarea></p>
+                <input type="submit" value="submit">
+            </form>
     </article>
 </body>
 </html>
