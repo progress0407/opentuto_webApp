@@ -37,10 +37,13 @@
         <input type="button" value="night/Day" id = "btn_nightDay" />
     </div>
     <article>
-        
         <?php
             if(!empty($_GET['subPage'])) {
-                echo file_get_contents($_GET['subPage'].'.html');
+                if($_GET['page'] === 'testLab') {
+                    echo file_get_contents($_GET['subPage']);
+                } else {
+                    echo file_get_contents($_GET['subPage'].'.html');
+                }
             } else {
                 echo file_get_contents('welcome.html');
             }
