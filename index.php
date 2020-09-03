@@ -22,12 +22,12 @@
                     if(empty($_GET['page'])){
                         echo ' . . .';
                     } else {
-                        if($_GET['page'] === 'byReadingDB') {
+                        if($_GET['page'] === 'ByReadingDB') {
                             // 아래 구문은 힘들다. 하지 말 것!
                             // echo file_get_contents('byReadingDB.php');
-                            header("Location: pracSQL/index.php");
-                        } else {
-                            echo file_get_contents($_GET['page'].'.html');
+                            header("Location: ByReadingDB/index.php");
+                        } else {//SWsLab
+                            echo file_get_contents($_GET['page']. "/" .$_GET['page']. ".html" );
                         }
                     }
                 ?>
@@ -39,10 +39,10 @@
     <article>
         <?php
             if(!empty($_GET['subPage'])) {
-                if($_GET['page'] === 'testLab') {
-                    echo file_get_contents($_GET['subPage']);
+                if($_GET['page'] === 'SWsLab') {
+                    echo file_get_contents($_GET['page']."/".$_GET['subPage']);
                 } else {
-                    echo file_get_contents($_GET['subPage'].'.html');
+                    echo file_get_contents($_GET['page']."/".$_GET['subPage'].".html");
                 }
             } else {
                 echo file_get_contents('welcome.html');

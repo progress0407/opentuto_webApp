@@ -1,0 +1,68 @@
+/* form {
+  display: inline;
+} */
+
+header {
+  padding: 5vh 0;
+  background-color: #fff59d;
+}
+
+a.backward {
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+}
+
+.upperContainer {
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+  text-align: center;
+}
+
+.BBSList, .writeArticle {
+  position: relative;
+  vertical-align: top;
+  display: inline-block;
+  border: 1px solid red;
+  width: 32vw;
+  padding: 14vh 0;
+  text-align: center;
+}
+
+.BBSList table, .writeArticle table {
+    /* table을 가운데 정렬  */
+    margin: auto;
+    /* table의 텍스트를 가운데 정렬 */
+    text-align: center;
+}
+
+.writeArticle table {
+  text-align: left;
+}
+
+.writeArticle table th {
+  min-width: 100px;
+}
+.writeArticle .imSubmit {
+  text-align: right;
+}
+
+article {
+  width: 98%;
+  height: 50vh;
+  border: 1px solid red;
+  padding: 10px;
+  margin: 10px;
+}
+
+article h2{
+  text-align: center;
+}
+
+#tobni{
+    width: 8vh;
+    height: 8vh;
+    float: left;
+    margin: 1vh 1vh 1vh 35vw;
+}
