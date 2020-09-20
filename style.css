@@ -1,92 +1,34 @@
-body{
-    /* font-family: NanumGothic, Consolas; */
+body {
+  /* font-family: NanumGothic, Consolas; */
+}
+
+.container-fluid {
+  padding-top: 20px;
 }
 
 /* body div input */
-#btn_nightDay{
-    font-size: 1.1em;
-    float: right;
-    border: 0;
-    margin: 10px;
+#btn_nightDay {
+  /* font-size: 1.1em;
+  float: right;
+  border: 0;
+  margin: 10px; */
 }
-body.black{
-    background-color: black;
-    color: white;
-}
-
-body.black a{
-    color: white;
+body.black {
+  background-color: black;
+  color: white;
 }
 
-header{
-   height: 10vh;
-   border-bottom: 1px solid red;
+body.black a {
+  color: white;
 }
 
-a:visited{
-    /* color: orange; */
-    text-decoration: none;
-    /* text-decoration: overline; */
+a:visited {
+  /* color: orange; */
+  text-decoration: none;
+  /* text-decoration: overline; */
 }
 
-a{
-    color:black;
-    text-decoration-line: none;
-}
-
-header h1{
-    /* text-align: center; */
-    margin: 2vh 0 1vh 42.5vw;
-    padding: 3vh 0 0vh 0;
-}  
-
-header img{
-    width: 8vh;
-    height: 8vh;
-    float: left;
-    margin: 1vh 1vh 1vh 35vw;
-}
-
-nav{
-    padding: 0 0 2vh 0;
-    margin: 1.5vh 0 1vh 0;
-    text-align: center;
-    border-bottom: 3px solid red;
-}
-
-nav span{
-    font-weight: bolder;
-    /* border: 1px solid orange; */
-    min-width: 5vh;
-    padding: 0.5vh 1vh;
-    margin: 0.5vh 1vh;
-}
-
-.subNav{
-    padding: 0 0 0 0;
-    width: 10vw;
-    border-right: 1px solid red;
-    float: left;
-    height: 90vh;
-}
-
-.subNav ol{
-    list-style: disc;
-    padding-left: 30px;
-}
-
-article{
-    width: 70vw;    
-    padding: 2vh 2vw;
-    float: left;
-    height: 100vh;
-}
-
-article h2{
-    margin: 0 0 30px 0;
-}
-
-article #tobni{
-    float: left;
-    margin: 10px;
+a {
+  color: black;
+  text-decoration-line: none;
 }
